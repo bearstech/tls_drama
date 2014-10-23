@@ -26,3 +26,8 @@ You can try with your openssl too :
 Old opennssl will crash without explicit -tls1 option, new one handle it well
 
 Lets try with Python 2.7 or Ruby.
+
+Licence
+=======
+
+3 terms BSD licence, © 2014 Mathieu Lecarme.
