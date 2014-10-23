@@ -27,6 +27,14 @@ Old opennssl will crash without explicit -tls1 option, new one handle it well
 
 Lets try with Python 2.7 or Ruby.
 
+Ugly certificate
+----------------
+
+The same certificate is used for client and server side, and I gave you a private key.
+NOBODY SHOULD DO THAT.
+
+But it's just a POC and life is short.
+
 Licence
 =======
 
