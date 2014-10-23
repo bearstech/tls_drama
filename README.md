@@ -24,3 +24,5 @@ You can try with your openssl too :
     openssl s_client -connect 192.168.59.103:2103 -tls1
 
 Old opennssl will crash without explicit -tls1 option, new one handle it well
+
+Lets try with Python 2.7 or Ruby.
