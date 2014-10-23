@@ -9,4 +9,4 @@ COPY server.crt /root/
 
 EXPOSE 2103
 WORKDIR /root
-CMD pwd && nc -l 2003 & stunnel4 stunnel.conf
+CMD pwd && nc -l -p 2003 -c 'xargs -n1 echo' & stunnel4 stunnel.conf
