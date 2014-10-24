@@ -28,6 +28,11 @@ Different version of python
  * Python 2.7 HEAD + OpenSSL 1.0.1j: *OK*
  * Python 3.4.2 + OpenSSL 1.0.1j: *OK*
 
+So, there will be an official 2.7.9 python release.
+Pray for your package maintener to consider it as a secure patch,
+not a new version for the futur stable release.
+Or just become modern, use Python 3.
+
 ### OpenSSL
 
 You can try with your openssl too :
@@ -38,7 +43,7 @@ Old opennssl will crash without explicit -tls1 option, new one handle it well
 
 ### Nodejs
 
-Nodejs does not age, its TLS API is correct.
+Nodejs does not age, its TLS API is correct, but elliptic curves are missing.
 
     node connect.js 192.168.59.103
 
