@@ -1,0 +1,56 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 3 (0x3)
+    Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=fake_ca.bearstech.com
+        Validity
+            Not Before: Oct 29 13:21:28 2014 GMT
+            Not After : Oct 26 13:21:28 2024 GMT
+        Subject: CN=tls_drama
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub: 
+                    04:6c:a1:61:ef:55:49:bf:a3:eb:51:67:52:6f:8b:
+                    f0:43:e7:b3:43:46:ca:ea:7a:4e:0a:51:7e:49:2c:
+                    69:90:57:8c:d2:9f:eb:e7:f4:aa:ac:db:90:18:8f:
+                    7d:91:a2:3a:3b:7d:1c:e5:f3:33:de:52:96:1c:91:
+                    76:35:76:41:81:b6:a3:fa:6e:27:ea:fc:2c:d5:ee:
+                    bb:d1:a2:4f:10:23:6f:5a:3b:24:0c:8c:5d:7d:52:
+                    b3:aa:e5:93:f3:72:60
+                ASN1 OID: secp384r1
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                E3:E4:C6:61:A3:1F:6B:EE:99:AD:86:FF:C7:34:3F:95:49:FD:60:B4
+            X509v3 Authority Key Identifier: 
+                keyid:BA:87:19:A8:D8:FC:7E:1E:5B:22:A2:91:D6:EE:EF:E6:6C:DB:62:BF
+                DirName:/CN=fake_ca.bearstech.com
+                serial:A3:23:30:3E:9C:3E:B1:0F
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+    Signature Algorithm: ecdsa-with-SHA256
+         30:65:02:31:00:cc:fb:c5:d5:4f:c5:12:08:82:a2:c3:4b:9a:
+         f0:9a:4b:92:14:e6:f6:fa:48:21:31:e7:fa:1b:ba:71:37:2b:
+         70:f6:26:1e:f4:1c:ac:aa:df:6f:05:f3:fc:82:60:f5:3b:02:
+         30:78:c3:0a:70:a7:bc:78:bd:92:7c:cd:c4:aa:59:ad:ec:c2:
+         e2:e4:f9:23:6e:74:e0:75:c1:69:65:de:eb:6c:d8:5d:66:e3:
+         4b:30:51:42:71:75:31:a9:65:d4:8e:9b:1e
+-----BEGIN CERTIFICATE-----
+MIICAjCCAYigAwIBAgIBAzAKBggqhkjOPQQDAjAgMR4wHAYDVQQDDBVmYWtlX2Nh
+LmJlYXJzdGVjaC5jb20wHhcNMTQxMDI5MTMyMTI4WhcNMjQxMDI2MTMyMTI4WjAU
+MRIwEAYDVQQDDAl0bHNfZHJhbWEwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAARsoWHv
+VUm/o+tRZ1Jvi/BD57NDRsrqek4KUX5JLGmQV4zSn+vn9Kqs25AYj32Rojo7fRzl
+8zPeUpYckXY1dkGBtqP6bifq/CzV7rvRok8QI29aOyQMjF19UrOq5ZPzcmCjgaEw
+gZ4wCQYDVR0TBAIwADAdBgNVHQ4EFgQU4+TGYaMfa+6ZrYb/xzQ/lUn9YLQwUAYD
+VR0jBEkwR4AUuocZqNj8fh5bIqKR1u7v5mzbYr+hJKQiMCAxHjAcBgNVBAMMFWZh
+a2VfY2EuYmVhcnN0ZWNoLmNvbYIJAKMjMD6cPrEPMBMGA1UdJQQMMAoGCCsGAQUF
+BwMBMAsGA1UdDwQEAwIFoDAKBggqhkjOPQQDAgNoADBlAjEAzPvF1U/FEgiCosNL
+mvCaS5IU5vb6SCEx5/obunE3K3D2Jh70HKyq328F8/yCYPU7AjB4wwpwp7x4vZJ8
+zcSqWa3swuLk+SNudOB1wWll3uts2F1m40swUUJxdTGpZdSOmx4=
+-----END CERTIFICATE-----

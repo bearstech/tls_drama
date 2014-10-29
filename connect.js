@@ -3,7 +3,7 @@ var fs = require('fs'),
 
 
 var options = {
-    ca: [fs.readFileSync('server.crt')],
+    ca: [fs.readFileSync('ca.crt')],
     secureProtocol: tls.TLSv1,
     servername: 'tls_drama'
 };

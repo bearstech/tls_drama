@@ -4,9 +4,9 @@ RUN apt-get -q update
 RUN apt-get -q install -y stunnel4 socat
 
 COPY stunnel.conf /root/
-COPY server.key /root/
-RUN chmod 600 /root/server.key
-COPY server.crt /root/
+COPY tls_drama.key /root/
+RUN chmod 600 /root/tls_drama.key
+COPY tls_drama.crt /root/
 
 EXPOSE 2103
 EXPOSE 2003
