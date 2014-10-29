@@ -37,13 +37,13 @@ Or just become modern, use Python 3.
 
 You can try with your openssl too :
 
-    openssl s_client -connect 192.168.59.103:2103 -tls1
+    openssl s_client -CAfile ca.crt -connect 192.168.59.103:2103
 
 Old opennssl will crash without explicit -tls1 option, new one handle it well
 
 ### Nodejs
 
-Nodejs does not age, its TLS API is correct, but elliptic curves are missing.
+Nodejs does not age, its TLS API is correct, and picky. You must used a named server, and can't use self signed certificate (you can use your own CA).
 
     node connect.js 192.168.59.103
 
@@ -51,13 +51,23 @@ Nodejs does not age, its TLS API is correct, but elliptic curves are missing.
 
 I should try with Ruby.
 
-Ugly certificate
-----------------
+Certificates
+------------
 
-The same certificate is used for client and server side, and I gave you a private key.
-NOBODY SHOULD DO THAT.
+[Easy_rsa 3](https://github.com/OpenVPN/easy-rsa) is used to manage a simple PKI.
 
-But it's just a POC and life is short.
+Settings come from [Mozilla security suggestion](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).
+
+The _vars_ file is tuned with :
+
+    set_var EASYRSA_ALGO		ec
+    set_var EASYRSA_CURVE		secp384r1
+    set_var EASYRSA_DIGEST		"sha256"
+
+The server key has its password erased
+
+    openssl ec -in tls_drama.key -out tls_drama.key
+
 
 Licence
 =======
