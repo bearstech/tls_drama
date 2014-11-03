@@ -1,6 +1,12 @@
 TLS Drama
 =========
 
+SSL3 protocol is now broken. Servers will soon stop using it.
+The secure connection protocol is now [TLS](http://en.wikipedia.org/wiki/Transport_Layer_Security), the successor of SSL.
+Browsers (Firefow, Chrome…) are ready, but is your code ready?
+
+Here is a playground to test your language against a serious server
+(a dummy server with Mozilla recommended setup).
 
 Build it
 --------
@@ -15,7 +21,7 @@ Run it
 Test it
 -------
 
-Find your docker IP, localhost for linux user, $DOCKER_HOST for boot2docker user.
+Find your docker IP, localhost for linux user, @boot2docker ip@ for boot2docker user.
 
 ### Python
 
